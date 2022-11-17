@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* NAVBAR STYLES */
+.navbar-toggler {
+  /* background-color: #8FB9A8; */
+}
+
+#nav-hover:hover {
+  color: red;
+}
+
+/* HEADER STYLES */
+/* header {
+  
+} */
+
+.carousel-content1 {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 300px;
+  height: 300px;
+  background: rgba(211, 211, 211, 0.3);
+  border-radius: 20px;
+}
+
+.carousel-content1 p {
+  font-size: 1.8rem;
+}
+
+
+
+
+
+/* MIAN STYLES */
+
+
+
+
+/* FOOTER STYLES */
+footer {
+  background-color: #8FB9A8;
+  color: white;  
+}
+
+#footer-text-group {
+  color: white;
+}
+
