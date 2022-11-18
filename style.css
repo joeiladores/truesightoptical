@@ -14,7 +14,9 @@ body {
   /* background-color: #8FB9A8; */
 }
 
-#nav-hover:hover {
+
+
+#nav-link-hover:hover {
   color: red;
 }
 
@@ -37,6 +39,10 @@ body {
   font-size: 1.8rem;
 }
 
+video {
+  max-width: 100%;
+  height: auto;
+}
 
 
 

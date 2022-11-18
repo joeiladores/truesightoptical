@@ -20,6 +20,9 @@
 <body>
 
   <!-- NAVBAR MENU -->
+  <!-- TODO:
+  1. Edit the companyu logo - transparent
+  2. Apply effect - like when you hover on the menu, the navbar background will be white -->
   <header>
     <nav class="navbar navbar-expand-md fixed-top">
       <div class="container">
@@ -32,26 +35,26 @@
         <div class="col-4 collapse navbar-collapse justify-content-start px-4" id="navbar">
           <ul class="navbar-nav mb-2 mt-4 mb-lg-0 text-md-start">
             <li class="nav-item">
-              <a class="nav-link active fw-bold mx-lg-3" href="home.html" id="nav-hover">HOME</a>
+              <a class="nav-link active fw-bold mx-lg-3" href="index.html" id="nav-link-hover">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold mx-lg-3" href="location.html" id="nav-hover">LOCATION</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-bold mx-lg-3 nav-hover" type="button" data-bs-toggle="modal"
-                data-bs-target="about.html" id="nav-hover">ABOUT US</a>
+              <a class="nav-link fw-bold mx-lg-3" href="location.html" id="nav-link-hover">LOCATION</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fw-bold mx-lg-3 nav-hover" type="button" data-bs-toggle="modal"
-                data-bs-target="services.html" id="nav-hover">SERVICES</a>
+                data-bs-target="about.html" id="nav-link-hover">ABOUT US</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fw-bold mx-lg-3 nav-hover" type="button" data-bs-toggle="modal"
-                data-bs-target="blog.html.html" id="nav-hover">BLOG</a>
+                data-bs-target="services.html" id="nav-link-hover">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold mx-lg-3 nav-hover" type="button" data-bs-toggle="modal"
+                data-bs-target="blog.html" id="nav-link-hover">BLOG</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fw-bold mx-lg-3" type="button" data-bs-toggle="modal"
-                data-bs-target="contact.html.html" id="nav-hover">CONTACT US</a>
+                data-bs-target="contact.html" id="nav-link-hover">CONTACT US</a>
             </li>
           </ul>
         </div>
@@ -60,13 +63,18 @@
      
   </header>  
 
+  <!-- TODO: 
+    1. Fix height - I want the screen height in default to the viewport screen height
+    2. Scroll down - will immediatly scroll screen down
+  -->
   <main class="vh-100 bg-cover" id="top">
     <!-- CAROUSEL SECTION -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="true">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 4"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -77,17 +85,25 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="/photos/pexels-nicola-giordano-1112203-medium.jpg" class="d-block w-100" alt="...">
+          <img src="photos/pexels-nicola-giordano-1112203-medium.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="/photos/pexels-alizee-marchand-947885-medium.jpg" class="d-block w-100" alt="...">
+          <img src="photos/pexels-alizee-marchand-947885-medium.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <!-- TODO: FIX slider: does not proceed with prev or next -->
+          <video autoplay muted>
+            <source src="videos/pexels-pavel-danilyuk-5995772-fhd.mp4" type="video/mp4">            
+            Your browser does not support the video tag. 
+          </video>     
+          
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
