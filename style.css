@@ -14,8 +14,6 @@ body {
   /* background-color: #8FB9A8; */
 }
 
-
-
 #nav-link-hover:hover {
   color: red;
 }
@@ -53,6 +51,7 @@ video {
 
 
 /* FOOTER STYLES */
+
 footer {
   background-color: #8FB9A8;
   color: white;  

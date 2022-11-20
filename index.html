@@ -5,15 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="style.css">
-  <!-- Roboto font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+
   <title>Truesight Optical Clinic</title>
 </head>
 
@@ -67,7 +63,8 @@
     1. Fix height - I want the screen height in default to the viewport screen height
     2. Scroll down - will immediatly scroll screen down
   -->
-  <main class="vh-100 bg-cover" id="top">
+  <main class="vh-100" id="top">
+  <!-- <main class="100vh" id="top"> -->
     <!-- CAROUSEL SECTION -->
     <div id="mainCarousel" class="carousel slide" data-bs-ride="true">
       <div class="carousel-indicators">
@@ -95,8 +92,7 @@
           <video autoplay muted>
             <source src="videos/pexels-pavel-danilyuk-5995772-fhd.mp4" type="video/mp4">            
             Your browser does not support the video tag. 
-          </video>     
-          
+          </video>               
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
@@ -143,6 +139,7 @@
         <span><i class="bi bi-facebook fs-2 pe-2"></i></span>
         <span><i class="bi bi-messenger fs-2 pe-2"></i></span>
         <span><i class="bi bi-instagram fs-2 pe-2"></i></span>
+        <i class="fa-duotone fa-camera-retro fa-2x" style="color: #1c7ed6;"></i>
       </div>
     </footer>
   </div>
