@@ -4,18 +4,93 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="style.css">
-  <!-- Roboto font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
   <title>About Us</title>
 </head>
 <body>
-  <h1>This is the About page</h1>
+  
+  <!-- NAVBAR SECTION -->
+  <nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="photo/tso-logo-transparent.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-center">
+        <span class="text-success">Truesight </span>Optical
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" id="nav-link-hover">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="location.html" id="nav-link-hover">LOCATION</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">ABOUT
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about.html#aboutus">About Us</a></li>
+              <li><a class="dropdown-item" href="about.html#team">Meet the Team</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html" id="nav-link-hover">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html" id="nav-link-hover">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" id="nav-link-hover">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <p id="aboutus">About Truesight Optical</p>
+
+  <!-- MAIN ABOUT SECTION -->
+  <div id="parallax-section">  
+
+    <section>
+      <div class="page-title">
+        <h1>ABOUT TRUESIGHT OPTICAL;</h1>
+      </div>
+    </section>    
+
+    <section>
+        <div class="parallax-eye-exam">
+          <h2>Eye Exams </h2>
+          <h3>Comprehensive adult eye exams</h3>
+        </div>
+    </section>    
+
+    <section>
+      <div class="parallax-content">
+        <h2>Adult Eye Exams</h2>
+        <p>We will evaluate your vision ( and possible need for glasses and / or contact lenses ) as well as your eye health. Our examination includes assessment for conditions such as glaucoma, diabetic retinopathy, macular degeneration and retinal detachment. Some patients will need to have their pupils dilated to allow for better assessment of these conditions.</p>
+        <p class="line-break margin-top-10"></p>
+        <p class="margin-top-10">he Philippine Association of Optometrists recommends that adults ( 20-64 years ) have their eyes examined every one to two years. Older adults ( 65 years and older ) should have their eyes examined annually. Some adults may need to have their eyes examined more frequently than this depending on their health, risk factors and medications they take ( e.g. diabetes, family history of glaucoma, etc ). After your initial exam, we can advise you how often you should have your eyes checked based on YOUR particular eye care needs.</p>
+      </div>
+    </section>
+  </div>
+
+
+  <p id="team">Meet the Team</p>
+
+
+
+  <!-- FOOTER SECTION -->
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
 </body>
 </html>
