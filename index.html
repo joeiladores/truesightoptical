@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="testvideobg.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="style.css">
-  <title>Truesight Optical</title>
+  <!-- Roboto font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+  <title>Truesight Optical Clinic</title>
 </head>
 <body>
 
@@ -57,24 +61,16 @@
         </div>
       </div>
     </nav>
-  
-   <!-- Video Source -->
-    <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
-    <div class="showcase">
-      <video src="/videos/pexels-pavel-danilyuk-5995772-fhd.mp4" muted loop autoplay></video>
-      <div class="text">
-        <h3>Providing our patients</h3> 
-        <h3>with highest quality </h3> 
-        <h3>professional, up-to-date vision care</h3>
-        <p>At three locations in Digos City, Isulan, and Koronadal City</p>
-        <a href="#" class="btn btn-success">Book An Appointment</a>
-      </div>
-    </div>
-  
-    <br>
-    <!-- CAROUSEL -->
-    
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+     
+  </header>  
+
+  <!-- TODO: 
+    1. Fix height - I want the screen height in default to the viewport screen height
+    2. Scroll down - will immediatly scroll screen down
+  -->
+  <main class="vh-100 bg-cover" id="top">
+    <!-- CAROUSEL SECTION -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="true">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -105,18 +101,14 @@
             <p><a href="#" class="btn btn-success">Book an Appointment</a></p>
           </div>
         </div>
-  
-        <!-- TODO: work this out VIDEO ITEM -->
-        <!-- <div class="carousel-item">        
-          <div class="carousel-caption d-none d-md-block">
-            <video autoplay muted loop>
-              <source src="videos/pexels-pavel-danilyuk-5995772-fhd.mp4" type="video/mp4">            
-            </video> 
-            <h5>State of the Art Equipment</h5>
-            <p>Equipment and Technology info</p>
-            <p><a href="#" class="btn btn-warning">Learn More</a></p>
-          </div>
-        </div> -->
+        <div class="carousel-item">
+          <!-- TODO: FIX slider: does not proceed with prev or next -->
+          <video autoplay muted>
+            <source src="videos/pexels-pavel-danilyuk-5995772-fhd.mp4" type="video/mp4">            
+            Your browser does not support the video tag. 
+          </video>     
+          
+        </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -127,45 +119,44 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-      <!-- </main> -->
-      
-      <!-- FOOTER SECTION -->
-      <div class="container-fluid">
-        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top ps-5 pe-5">
-          <div class="col mb-3">
-            <img src="/photos/tso-logo-crop.jpg" class="img-thumbnail" alt="truesight optical logo">
-            <p></p>
-          </div>  
-          
-          <div class="col mb-3">
-            
-          </div>
-      
-          <div class="col mb-3">
-            <h3>Quick Links</h3>
-            <ul class="nav flex-column">
-              <li class="mb-2 fs-5" id="footer-text-group"><a href="index.html" class="text-decoration-none text-light">Home</a></li>
-              <li class="mb-2 fs-5" id="footer-text-group"><a href="about.html" class="text-decoration-none text-light">About Us</a></li>
-              <li class="mb-2 fs-5" id="footer-text-group"><a href="location.html" class="text-decoration-none text-light">Locations</a></li>
-              <li class="mb-2 fs-5" id="footer-text-group"><a href="services.html" class="text-decoration-none text-light">Services</a></li>
-              <li class="mb-2 fs-5" id="footer-text-group"><a href="blog.html" class="text-decoration-none text-light">Blog</a></li>
-              <li class="mb-2 fs-5" id="footer-text-group"><a href="contact.html" class="text-decoration-none text-light">Contact Us</a></li>
-            </ul>
-          </div>
-      
-          <div class="col mb-3">
-            
-          </div>
-          
-          <div class="col mb-3">
-            <h3>We Are Socials</h3>        
-            <span><i class="bi bi-facebook fs-2 pe-2"></i></span>
-            <span><i class="bi bi-messenger fs-2 pe-2"></i></span>
-            <span><i class="bi bi-instagram fs-2 pe-2"></i></span>
-            <i class="fa-duotone fa-camera-retro fa-2x" style="color: #1c7ed6;"></i>
-          </div>
-        </footer>
+
+  </main>
+
+  <!-- FOOTER SECTION -->
+  <div class="container-fluid">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top ps-5 pe-5">
+      <div class="col mb-3">
+        <img src="/photos/tso-logo-crop.jpg" class="img-thumbnail" alt="truesight optical logo">
       </div>  
+      
+      <div class="col mb-3">
+        
+      </div>
+  
+      <div class="col mb-3">
+        <h3>Quick Links</h3>
+        <ul class="nav flex-column">
+          <li class="mb-2 fs-5" id="footer-text-group"><a href="index.html" class="text-decoration-none text-light">Home</a></li>
+          <li class="mb-2 fs-5" id="footer-text-group"><a href="about.html" class="text-decoration-none text-light">About Us</a></li>
+          <li class="mb-2 fs-5" id="footer-text-group"><a href="location.html" class="text-decoration-none text-light">Locations</a></li>
+          <li class="mb-2 fs-5" id="footer-text-group"><a href="services.html" class="text-decoration-none text-light">Services</a></li>
+          <li class="mb-2 fs-5" id="footer-text-group"><a href="blog.html" class="text-decoration-none text-light">Blog</a></li>
+          <li class="mb-2 fs-5" id="footer-text-group"><a href="contact.html" class="text-decoration-none text-light">Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <div class="col mb-3">
+        
+      </div>
+      
+      <div class="col mb-3">
+        <h3>We Are Socials</h3>        
+        <span><i class="bi bi-facebook fs-2 pe-2"></i></span>
+        <span><i class="bi bi-messenger fs-2 pe-2"></i></span>
+        <span><i class="bi bi-instagram fs-2 pe-2"></i></span>
+      </div>
+    </footer>
+  </div>
 
 
   <!-- JavaScript Bundle with Popper -->

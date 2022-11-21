@@ -25,6 +25,8 @@ header .logo {
   cursor: pointer;
 }
 
+
+
 #nav-link-hover:hover {
   color: red;
 }
@@ -163,6 +165,15 @@ header .logo {
   }
 }
 
+
+
+
+/* MIAN STYLES */
+
+
+
+
+/* FOOTER STYLES */
 footer {
   background-color: #8FB9A8;
   color: white;  
