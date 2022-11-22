@@ -34,23 +34,6 @@ header .logo {
   color: red;
 }
 
-/* video {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  min-height: 100vh;
-  object-fit: cover;
-  opacity: 0.8;
-} */
-
-.carousel-item {
-  width: 100%;
-  height: 100vh;
-  min-height: 100vh;
-}
-
 .home {
   /* position: absolute; */
   position: relative;
@@ -117,35 +100,42 @@ header .logo {
   letter-spacing: 6px;
 }
 
-/* .menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
+.carousel-item {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+/* ABOUT SECTION LINK IN MAIN STYLES */
+.doctor-section {
+  background-color:#8FB9A8;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 100vh;
+}
+
+.card-img {
+  width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  object-fit: cover;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
-.menu ul {
-  position: relative;
+.accordion {
+  padding: 20px 100px;
 }
 
-.menu ul li {
-  list-style: none;
+/* STYLE FOR LOCATION ACCORDION */
+#accordion-card-bg {
+  background-color:#8FB9A8;
+  opacity: 0.8;
+  color:black;
+  text-align: center;  
 }
 
-.menu ul li a {
-  text-decoration: none;
-  font-size: 24px;
-  color: #111;
-}
 
-.menu ul li a:hover {
-  color: #03a9f4;
-} */
-
+/* RESPONSIVE */
 @media (max-width: 991px) {
   .home,
   .home header
@@ -184,6 +174,20 @@ footer {
 
 
 /* PARALLAX STYLES */
+#parallax-section .parallax-location{
+  color: white;
+  padding-left: 100px;
+  padding-top: 200px; 
+  padding-bottom: 200px; 
+  background-image: url(photo/location-p.jpg); 
+  width: 100%; 
+  height: 50%;
+  background-attachment: fixed; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: top center;
+}
+
 #parallax .parallax-about {
   padding-top: 200px; 
   padding-bottom: 200px; 
@@ -191,7 +195,6 @@ footer {
   overflow: hidden; 
   position: relative; 
   width: 100%; 
-  height: 50%;
   background-image: url(photo/team-p.jpg); 
   background-attachment: fixed; 
   background-size: cover; 
@@ -217,8 +220,9 @@ footer {
 
 #parallax-section .parallax-content {
   background: white; 
-  padding: 100px; 
-  /* width:820px;  */
+  padding: 30px 100px; 
+  /* width:800px;  */
+  width: 100%;
   margin:0 auto; 
   text-align:justify;
 }
@@ -277,32 +281,28 @@ footer {
 /* Media Queries */
 /**************************/
 @media screen and (max-width: 959px) and (min-width: 768px) {
-  #parallax .block {
+  #parallax .parallax-content {
     padding: 40px; 
-    width:620px;
+    width: 620px;
   }
 }
 @media screen and (max-width: 767px) {
-  #parallax .block {
+  #parallax .parallax-content {
     padding: 30px; 
     width:420px;
   }
   #parallax h2 {
-    font-size:30px;
+    font-size: 30px;
   }
   #parallax .parallax-title {
-    padding-top:100px; 
-    padding-bottom:100px;
+    padding-top: 100px; 
+    padding-bottom: 100px;
   }
 }
 @media screen and (max-width: 479px) {
-  #parallax .block {
+  #parallax .parallax-content {
     padding: 30px 15px; 
-    width:290px;}
+    width: 290px;}
 }
 
 /* MAP */
-iframe {
-  width: 100%;
-  height: 50%;
-}
