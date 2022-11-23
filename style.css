@@ -12,29 +12,14 @@ html {
   height: 100%;
 }
 
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 40px 100px;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .logo {
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
+/* NAV HOVER STYLE */
 #nav-link-hover:hover {
   color: red;
 }
 
-.home {
+
+/* HOME MAIN STYLES */
+.main-section {
   /* position: absolute; */
   position: relative;
   right: 0;
@@ -49,11 +34,7 @@ header .logo {
   z-index: 2;
 }
 
-.home.active {
-  right: 300px;
-}
-
-.home video {
+.main-section video {
   position: absolute;
   top: 0;
   left: 0;
@@ -63,19 +44,19 @@ header .logo {
   opacity: 0.8;
 }
 
-.home-text {
+.main-section-text {
   position: relative;
   z-index: 10;
 }
 
-.home-text h3 {
+.main-section-text h3 {
   font-size: 3em;
   font-weight: 500;
   color: #fff;
   line-height: 1em;
 }
 
-.home-text p {
+.main-section-text p {
   font-size: 1.1em;
   color: #fff;
   margin: 20px 0;
@@ -83,24 +64,10 @@ header .logo {
   max-width: 700px;
 }
 
-.home-text a {
-  display: inline-block;
-  font-size: 1em;
-  background: #fff;
-  padding: 10px 30px;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: 10px;
-  color: #111;
-  letter-spacing: 1px;
-  transition: 0.2s;
-}
 
-.home-text a:hover {
-  letter-spacing: 6px;
-}
-
-.carousel-section {
+/* CAROUSEL STYLES */
+/* TODO: FIX THIS HINDI NAG RESPONSIVE */
+/* .carousel-section {
   height: 100vh;
 }
 
@@ -108,7 +75,48 @@ header .logo {
   width: 100%;
   height: 100vh;
   min-height: 100vh;
+} */
+
+.carousel-section .carousel-item {
+	min-height: 100vh;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
 }
+
+.carousel-section .carousel-item .container {
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.carousel-section .carousel-item h2 {
+	font-size: 80px;
+	color: white;
+	margin:0 0 10px;
+}
+
+.carousel-section .carousel-item p {
+	font-size: 30px;
+	margin:0;
+	color: white;
+}
+
+/* IF SCREEN BECOMES AMALLWER */
+/* THIS IS MEDIUM SCREEN */
+@media(max-width: 767px) {
+  .carousel-section .carousel-item h2 {
+  	font-size: 45px;
+  }
+  .carousel-section .carousel-item p {
+  	font-size: 22px;
+  }
+}
+
+
 
 /* ABOUT SECTION LINK IN MAIN STYLES */
 .team-section {
