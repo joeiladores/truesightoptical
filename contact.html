@@ -42,7 +42,7 @@
             <a class="nav-link" href="services.html" id="nav-link-hover">SERVICES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html" id="nav-link-hover">CONTACT US</a>
+            <a class="nav-link" href="contact.html" id="nav-link-hover">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -50,8 +50,116 @@
   </nav>
 
 
+  <!-- PARALLAX SECTION -->
+  <section id="parallax-section">  
+    <div class="page-title" id="contact">
+      <h1>BOOK YOUR APOINTMENT</h1>
+    </div>
+    <div class="parallax-contact">
+      <h2> </h2>          
+    </div>
+  </section>
 
-  <h1>This is the Contact Us page</h1>
+
+  <section>
+    <h4 class="text-center pt-5">To book an appointment, please call us on 0905-623-4733 or fill out the form below!</
+  </section>
+
+
+  <!-- CONTACT FORM SECTION -->
+  <section class="contact-section pt-5 bg-light ps-5 pe-5">
+
+    <form>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 pb-3">
+            <select class="form-select" aria-label="Are you an existing patient?" required>
+              <option selected>Are you an existing patient?</option>
+              <option value="y">Yes</option>
+              <option value="n">No</option>
+            </select>
+          </div>
+          <div class="col-4 pb-3">
+            <select class="form-select" aria-label="Choose Your Clinic" required>
+              <option selected>Choose Your Clinic</option>
+              <option value="digos">Digos</option>
+              <option value="isulan">Isulan</option>
+              <option value="marbel">Marbel</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 pb-2 pt-2">
+            <h3>PERSONAL INFORMATION</h3>
+          </div>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-6 pb-3">
+            <input type="text" class="form-control" id="FirstName" placeholder="First Name" required>            
+          </div>   
+          <div class="col-6 pb-3">
+            <input type="text" class="form-control" id="LastName" placeholder="Last Name" required>
+          </div>     
+        </div>
+        <div class="row g-3">
+          <div class="col-6 pb-3">
+            <input type="tel" class="form-control" id="PhoneNum" placeholder="Phone Number">            
+          </div>   
+          <div class="col-6 pb-3">
+            <input type="email" class="form-control" id="Email" placeholder="Email">
+          </div>     
+        </div>
+        <div class="row g-3">
+          <div class="col-6 pb-3">
+            <input type="text" class="form-control" id="AddressLine1" placeholder="Address Line 1">            
+          </div>   
+          <div class="col-6 pb-3">
+            <input type="text" class="form-control" id="AddressLine2" placeholder="Addresss Line 2">
+          </div>     
+        </div>
+        <div class="row g-3">
+          <div class="col-6 pb-3">
+            <input type="text" class="form-control" id="City" placeholder="City/Town">            
+          </div>   
+          <div class="col-6 pb-3">
+            <input type="text" class="form-control" id="PostCode" placeholder="Post Code">
+          </div>     
+        </div>
+
+        <div class="row">
+          <div class="col-12 pb-2 pt-2">
+            <h3>BOOKING INFORMATION</h3>
+          </div>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-4 pb-3">
+            <input type="datetime-local" class="form-control" id="Date" placeholder="Date">            
+          </div>   
+          <div class="col-8 pb-2">
+            <select class="form-select" aria-label="What would you like to book?" required>
+              <option selected>What would you like to book?</option>
+              <option value="EyeExamAdult">Eye Exam (Adult)</option>
+              <option value="EyeExamChild">Eye Exam (Child)</option>
+              <option value="ContactLenseFitting">ContactLenseFitting</option>
+              <option value="SpecialistTesting">SpecialistTesting</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 pb-3">
+            <textarea class="form-control" id="FurtherInfo" rows="3" placeholder="Please provide any other information"></textarea>
+          </div>
+        </div>
+        <button class="col-12 btn btn-success mb-5" type="submit">Request Appointment</button>
+      </div>
+        
+    </form>
+  
+  </section>
 
 
   <!-- FOOTER SECTION -->
@@ -76,6 +184,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
