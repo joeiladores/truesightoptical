@@ -198,7 +198,7 @@ footer {
 #parallax-section .parallax-about {
   padding-top: 200px; 
   padding-bottom: 200px; 
-  padding-left: 100px;
+  padding-left: 50px;
   overflow: hidden; 
   position: relative; 
   width: 100%; 
@@ -225,8 +225,7 @@ footer {
 
 #parallax-section .parallax-content {
   background: white; 
-  padding: 30px 100px; 
-  /* width:800px;  */
+  padding: 30px 50px; 
   width: 100%;
   margin:0 auto; 
   text-align:justify;
@@ -234,7 +233,7 @@ footer {
 
 #parallax-section .parallax1 {
   color: white;
-  padding-left: 100px;
+  padding-left: 50px;
   padding-top: 200px; 
   padding-bottom: 200px; 
   overflow: hidden; 
@@ -248,7 +247,7 @@ footer {
 }
 
 #parallax-section .parallax2 {
-  padding-left: 100px;
+  padding-left: 50px;
   padding-top: 200px; 
   padding-bottom: 200px; 
   overflow: hidden; 
@@ -262,7 +261,7 @@ footer {
 }
 
 #parallax-section .parallax3 {
-  padding-left: 100px;
+  padding-left: 50px;
   padding-top: 200px; 
   padding-bottom: 200px; 
   overflow: hidden; 
@@ -277,7 +276,7 @@ footer {
 
 
 
-/* RESPONSIVLE  */
+/* RESPONSIVLE PARALLAX */
 /* big */
 @media screen and (max-width: 959px) and (min-width: 768px) {
   #parallax-section .parallax-content {
@@ -301,16 +300,12 @@ footer {
     padding-top: 30px; 
     padding-bottom: 30px;    
   }
-  #parallax-section .parallax1, 
-  #parallax-section .parallax2, 
-  #parallax-section .parallax3 {
-    padding-top: 50px; padding-bottom:50px;
-  }
+
 }
 /* small */
 @media screen and (max-width: 479px) {
   #parallax-section .parallax-content {
-    padding: 30px 15px; 
+    padding: 20px 10px; 
     width: 290px;
   }
   #parallax-section .parallax1, 
