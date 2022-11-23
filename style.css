@@ -127,7 +127,7 @@ header .logo {
 }
 
 .accordion {
-  padding: 20px 100px;
+  padding: 20px 50px;
 }
 
 /* STYLE FOR LOCATION ACCORDION */
@@ -183,7 +183,7 @@ footer {
 /* PARALLAX STYLES */
 #parallax-section .parallax-location{
   color: white;
-  padding-left: 100px;
+  padding-left: 50px;
   padding-top: 200px; 
   padding-bottom: 200px; 
   background-image: url(photo/location-p.jpg); 
