@@ -107,14 +107,15 @@ header .logo {
 }
 
 /* ABOUT SECTION LINK IN MAIN STYLES */
-.doctor-section {
+.team-section {
   background-color:#8FB9A8;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  height: 100vh;
 }
 
-.doctor-section-img {
+
+/* STYLES FOR TEAM SECTION (DOCTORS) */
+.team-section-img {
   border-radius: 8px;
 }
 
@@ -126,16 +127,28 @@ header .logo {
   border-top-right-radius: 0px;
 }
 
+
+/* STYLE FOR LOCATION ACCORDION */
 .accordion {
   padding: 20px 50px;
 }
 
-/* STYLE FOR LOCATION ACCORDION */
 #accordion-card-bg {
   background-color:#8FB9A8;
   opacity: 0.8;
   color:black;
   text-align: center;  
+}
+
+
+/* STYLES FOR FOOTER */
+footer {
+  background-color: #8FB9A8;
+  color: white;
+}
+
+#footer-text-group {
+  color: white;
 }
 
 
@@ -168,16 +181,6 @@ header .logo {
 
 
 }
-
-footer {
-  background-color: #8FB9A8;
-  color: white;
-}
-
-#footer-text-group {
-  color: white;
-}
-
 
 
 /* PARALLAX STYLES */
