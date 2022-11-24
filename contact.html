@@ -12,8 +12,8 @@
 </head>
 <body>
 
-  <!-- NAVBAR SECTION -->
-  <nav class="navbar navbar-expand-lg bg-light fixed-top">
+   <!-- NAVBAR SECTION -->
+   <nav class="navbar navbar-expand-lg bg-light fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="photo/tso-logo-transparent.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-center">
@@ -53,7 +53,7 @@
   <!-- PARALLAX SECTION -->
   <section id="parallax-section">  
     <div class="page-title" id="contact">
-      <h1>BOOK YOUR APOINTMENT</h1>
+      <h1>BOOK YOUR APPOINTMENT</h1>
     </div>
     <div class="parallax-contact">
       <h2> </h2>          
@@ -61,8 +61,8 @@
   </section>
 
 
-  <section>
-    <h4 class="text-center pt-5">To book an appointment, please call us on 0905-623-4733 or fill out the form below!</
+  <section class="pt-5 pb-5 bg-success bg-gradient">
+    <h4 class="text-center">To book an appointment, please call us on 0905-623-4733 or fill out the form below!</h4>
   </section>
 
 
@@ -74,14 +74,14 @@
         <div class="row">
           <div class="col-4 pb-3">
             <select class="form-select" aria-label="Are you an existing patient?" required>
-              <option selected>Are you an existing patient?</option>
+              <option selected>Are you an existing patient? **</option>
               <option value="y">Yes</option>
               <option value="n">No</option>
             </select>
           </div>
           <div class="col-4 pb-3">
             <select class="form-select" aria-label="Choose Your Clinic" required>
-              <option selected>Choose Your Clinic</option>
+              <option selected>Choose Your Clinic **</option>
               <option value="digos">Digos</option>
               <option value="isulan">Isulan</option>
               <option value="marbel">Marbel</option>
@@ -97,10 +97,10 @@
 
         <div class="row g-3">
           <div class="col-6 pb-3">
-            <input type="text" class="form-control" id="FirstName" placeholder="First Name" required>            
+            <input type="text" class="form-control" id="FirstName" placeholder="First Name **" required>            
           </div>   
           <div class="col-6 pb-3">
-            <input type="text" class="form-control" id="LastName" placeholder="Last Name" required>
+            <input type="text" class="form-control" id="LastName" placeholder="Last Name **" required>
           </div>     
         </div>
         <div class="row g-3">
@@ -136,11 +136,11 @@
 
         <div class="row g-3">
           <div class="col-4 pb-3">
-            <input type="datetime-local" class="form-control" id="Date" placeholder="Date">            
+            <input type="datetime-local" class="form-control" id="Date" placeholder="Date **" required>            
           </div>   
           <div class="col-8 pb-2">
             <select class="form-select" aria-label="What would you like to book?" required>
-              <option selected>What would you like to book?</option>
+              <option selected>What would you like to book? **</option>
               <option value="EyeExamAdult">Eye Exam (Adult)</option>
               <option value="EyeExamChild">Eye Exam (Child)</option>
               <option value="ContactLenseFitting">ContactLenseFitting</option>
@@ -165,18 +165,17 @@
   <!-- FOOTER SECTION -->
   <footer class="footer-section container-fluid">
     <div class="row">
-      <div class="col-lg-4 p-4 ps-5">
+      <div class="col-lg-4 ps-5 text-center">
         <a href="index.html" class="text-decoration-none text-dark fs-5">
           <img src="photo/tso-logo-transparent.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-center">
           <span class="text-success">Truesight </span><span class="text-dark">Optical</span>
         </a>  
       </div>
-      <div class="col-lg-4 p-4 ps-5">
+      <div class="col-lg-4 ps-5 text-center">
         <h5 class="text-dark"><strong>Visit or call us</strong> to start experiencing better vision and comfort than ever before!</h5>
       </div>
-      <div class="col-lg-4 p-4 ps-5">
-        <div class="mb-5 fs-3 justify-content-center">
-          <h5 class="text-dark">Follow Us</h5>
+      <div class="col-lg-4 ps-5 text-center">
+        <div class="fs-3 justify-content-center">
           <a href="#"><span><i class="bi bi-facebook fs-2 pe-2 text-dark"></i></span></a>
           <a href="#"><span><i class="bi bi-messenger fs-2 pe-2 text-dark"></i></span></a>
           <a href="#"><span><i class="bi bi-instagram fs-2 text-dark"></i></span></a>

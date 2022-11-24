@@ -44,24 +44,33 @@ html {
   opacity: 0.8;
 }
 
-.main-section-text {
+.main-section .main-section-text {
   position: relative;
   z-index: 10;
 }
 
-.main-section-text h3 {
+.main-section > .main-section-text > h3 {
   font-size: 3em;
   font-weight: 500;
   color: #fff;
   line-height: 1em;
 }
 
-.main-section-text p {
+.main-section .main-section-text p {
   font-size: 1.1em;
   color: #fff;
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .main-section-text h3
+ {
+   font-size: 2em;
+ }
 }
 
 
@@ -88,7 +97,7 @@ html {
 .carousel-section .carousel-item .container {
 	position: absolute;
 	left: 50%;
-	top:50%;
+	top: 50%;
 	transform: translate(-50%,-50%);
 	text-align: center;
 }
@@ -117,27 +126,23 @@ html {
 }
 
 
-
 /* ABOUT SECTION LINK IN MAIN STYLES */
+.team-section-link-img {
+  border-radius: 8px;
+  object-fit: cover;
+  height: 50%;
+  overflow-y:auto;
+}
+
+
+/* STYLES FOR TEAM SECTION (DOCTORS)  IN ABOUT PAGE*/
 .team-section {
   background-color:#8FB9A8;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-/* STYLES FOR TEAM SECTION (DOCTORS) */
-.team-section-img {
-  border-radius: 8px;
 
-}
-
-/* .card-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-bottom-right-radius: 0px;
-  border-top-right-radius: 0px;
-} */
 
 
 /* STYLE FOR LOCATION ACCORDION */
@@ -156,39 +161,14 @@ html {
 /* STYLES FOR FOOTER */
 footer {
   background-color: #8FB9A8;
-  color: white;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-#footer-text-group {
-  color: white;
-}
 
-
-/* RESPONSIVE */
-@media (max-width: 991px) {
-  .home,
-  .home header
-  {
-    padding: 40px;
-  }
-  .home-text h2
-  {
-    font-size: 3em;
-  }
-  .home-text h3
-  {
-    font-size: 2em;
-  }
-}
-
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-}
 
 /* STYLES FOR SERVICES CARD HOVER*/
 .other-services-section-card .card:hover {
@@ -198,12 +178,13 @@ footer {
 }
 
 
+
 /* PARALLAX STYLES */
 #parallax-section .parallax-location{
   color: white;
   padding-top: 200px; 
   padding-bottom: 200px; 
-  padding-left: 50px;  
+  padding-left: 100px;  
   overflow: hidden; 
   position: relative; 
   width: 100%; 
@@ -217,7 +198,7 @@ footer {
 #parallax-section .parallax-about {
   padding-top: 200px; 
   padding-bottom: 200px; 
-  padding-left: 50px;
+  padding-left: 100px;
   overflow: hidden; 
   position: relative; 
   width: 100%; 
@@ -231,7 +212,7 @@ footer {
 #parallax-section .parallax-contact {
   padding-top: 200px; 
   padding-bottom: 200px; 
-  padding-left: 50px;
+  padding-left: 100px;
   overflow: hidden; 
   position: relative; 
   width: 100%; 
@@ -257,7 +238,7 @@ footer {
 
 #parallax-section .parallax-content {
   background: white; 
-  padding: 30px 50px; 
+  padding: 30px 100px; 
   width: 100%;
   margin:0 auto; 
   text-align:justify;
@@ -265,7 +246,7 @@ footer {
 
 #parallax-section .parallax1 {
   color: white;
-  padding-left: 50px;
+  padding-left: 100px;
   padding-top: 200px; 
   padding-bottom: 200px; 
   overflow: hidden; 
@@ -279,7 +260,7 @@ footer {
 }
 
 #parallax-section .parallax2 {
-  padding-left: 50px;
+  padding-left: 100px;
   padding-top: 200px; 
   padding-bottom: 200px; 
   overflow: hidden; 
@@ -293,7 +274,7 @@ footer {
 }
 
 #parallax-section .parallax3 {
-  padding-left: 50px;
+  padding-left: 100px;
   padding-top: 200px; 
   padding-bottom: 200px; 
   overflow: hidden; 
@@ -337,15 +318,15 @@ footer {
 /* small */
 @media screen and (max-width: 479px) {
   #parallax-section .parallax-content {
-    padding: 20px 10px; 
+    padding: 20px 5px; 
     width: 290px;
   }
-  /* #parallax-section .parallax1, 
+  #parallax-section .parallax1, 
   #parallax-section .parallax2, 
-  #parallax-section .parallax3 
+  #parallax-section .parallax3, 
   #parallax-section .parallax-location {
-  padding: 30px 15px; 
-  width: 290px; */
+  padding: 20px 5px; 
+  width: 290px;
   }  
  
 }
